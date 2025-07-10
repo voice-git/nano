@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+/*============================
+	topics 共通パーツ
+============================*/
+.mv {
+    padding: 200px 0 60px;
+}
+
+.page__ttl {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    letter-spacing: -.01em;
+}
+
+.page__ttl .font-en {
+    letter-spacing: -.01em;
+}
+
+.appear__hd {
+    display: block;
+    opacity: 1;
+}
+
+.appear__hd.active {
+    animation: none;
+}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:599px) {
+    .mv {
+        padding: 150px 0 30px;
+    }
+}
+
+/*============================
+	topics
+============================*/
+.topics {
+    padding: 0 0 140px;
+}
+
+.topics__nav {
+    max-width: 690px;
+    margin: 0 auto 30px;
+}
+
+.topics__li {
+    padding: 0 1%;
+    border-right: solid 1px #fff;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.topics__li.active {
+    text-decoration: underline;
+}
+
+.topics__li:last-child {
+    border: none;
+}
+
+
+.topics__flex {
+    margin-bottom: 130px;
+    overflow: hidden;
+}
+
+.topics__atc {
+    width: 31%;
+    margin: 0 1% 70px;
+    position: relative;
+}
+
+.topics__atc a {
+    color: #fff;
+}
+
+.topics__atc .flex {
+    margin-bottom: 10px;
+}
+
+.topics__img {
+	height: 200px;
+    margin-bottom: 10px;
+    background: #111;
+    overflow: hidden;
+}
+.topics__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.topics__txtwrap {
+    transition: .5s;
+}
+
+.topics__txtwrap:hover {
+    opacity: .5;
+}
+
+.topics__date {
+    font-size: 1.5rem;
+    letter-spacing: -.02em;
+}
+
+.topics__ctg {
+    /* width: 84px; */
+    width: auto;
+    padding: 0 8px;
+    /* line-height: 22px; */
+    line-height: 1.8;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.topics__ctg.ctg01 {
+    background: #111;
+    border: solid 1px #00A1B8;
+    color: #00A1B8;
+}
+
+.topics__ctg.ctg02 {
+    background: #fff;
+    color: #00A1B8;
+}
+
+.topics__ctg.ctg03 {
+    background: #00A1B8;
+    color: #fff;
+}
+
+.topics__ctg.ctg04 {
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+.topics__ctg.ctg05 {
+    background: #90D0DB;
+    color: #fff;
+}
+
+.topics__ctg.ctg06 {
+    background: #4BB7C8;
+    color: #fff;
+}
+
+.topics__h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.topics .link__btn a {
+    margin: 0 auto;
+}
+
+#hide__btn {
+    display: none;
+}
+
+#hide__btn.active {
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .topics__ul.pc {
+        display: flex;
+    }
+
+    .topics__select.sp {
+        display: none;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .topics {
+        padding-bottom: 100px;
+    }
+
+    .topics__nav {
+        margin-bottom: 50px;
+    }
+
+    .topics__ul.pc {
+        display: none;
+    }
+
+    .topics__select.sp {
+        display: block;
+        width: 100%;
+        height: 55px;
+        text-align: center;
+        font-size: 1.8rem;
+        background-color: none;
+        background: url(../img/cmn/btn_down_wh.png)no-repeat center right 5%/20px;
+        color: #fff;
+        border: solid 1px #fff;
+        font-family: 'Shippori Mincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+    }
+
+    .topics__li {
+        color: #fff;
+    }
+
+    .topics__flex {
+        margin-bottom: 100px;
+    }
+
+    .topics__atc {
+        width: 100%;
+        margin: 0 0 50px;
+    }
+
+    .topics__atc .flex {
+        display: flex;
+    }
+
+    .topics__date {
+        font-size: 1.7rem;
+    }
+
+    .topics__ctg {
+        font-size: 1.4rem;
+        line-height: 24px;
+        /* width: 90px; */
+        width: auto;
+    }
+
+    .topics .link__btn a {
+        width: 200px;
+        line-height: 50px;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+}
+
+
+/*============================
+	detail page
+============================*/
+.detail {
+    padding-bottom: 200px;
+}
+
+.detail .topics__date {
+    margin-right: 10px;
+}
+
+.detail .flex {
+    margin-bottom: 25px;
+}
+
+.detail__h3 {
+    font-size: 2.2rem;
+    padding-bottom: 40px;
+    line-height: 1.6;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.detail__txt {
+    border-top: solid 1px #fff;
+    padding-top: 40px;
+    /* font-size: 1.5rem;
+    line-height: 2.2;
+    margin-bottom: 50px; */
+}
+
+.detail__img {
+    margin-bottom: 40px;
+}
+
+.detail__imgwrap {
+    margin-bottom: 125px;
+}
+
+.btn__prev a {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn__prev span {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.btn__next a {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn__next span {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+@media screen and (max-width:599px) {
+    .detail {
+        padding-bottom: 100px;
+    }
+
+    .detail .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .detail__h3 {
+        font-size: 1.8rem;
+        padding-bottom: 30px;
+    }
+
+    .detail__txt {
+        padding-top: 25px;
+    }
+
+    .detail__img {
+        margin-bottom: 25px;
+    }
+
+    .detail__imgwrap {
+        margin-bottom: 100px;
+    }
+
+    .detail .link__btn a {
+        width: 200px;
+        line-height: 50px;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+}
+
+/* 本文調整 */
+.detail .inner p {
+    font-size: 1.5rem;
+    line-height: 2.2;
+    margin-bottom: 32px;
+}
+
+.detail .inner p.topics__ctg {
+    line-height: 1.8;
+}
+
+.detail .inner p:last-of-type {
+    margin-bottom: 50px;
+}
+
+/* Ajax Load More 調整 */
+.ajax-load-more-wrap {
+    width: 100%;
+}
+
+.alm-listing {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topics .link__btn {
+    margin: 0 auto;
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    max-width: 100%;
+    width: 200px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    transition: .5s;
+    background: #00A1B8;
+    letter-spacing: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.topics .link__btn:hover {
+    opacity: .9;
+    background: #fff;
+    color: #00A1B8;
+}
+
+.topics-detail__page .inner p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.topics-detail__page .inner .detail__btnwrap p a {
+    text-decoration: none;
+}
+
+sup{
+	font-size: 80%;
+	vertical-align: super;
+}
+sub{
+	font-size: 80%;
+	vertical-align: sub;
+}

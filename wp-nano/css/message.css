@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*============================
+	message 共通パーツ
+============================*/
+
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:599px) {}
+
+/*============================
+	interview
+============================*/
+.interview{
+    padding: 120px 0 180px;
+}
+.interview__copy{
+    font-size: 3.8rem;
+    letter-spacing: .05em;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 120px;
+}
+.interview__atc.atc01{
+    margin-bottom: 280px;
+}
+.interview__img{
+    margin-bottom: 60px;
+}
+.interview__txt{
+    max-width: 816px;
+    margin: 0 auto 30px;
+    line-height: 2;
+}
+.interview__name{
+    text-align: right;
+    max-width: 816px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:599px) {
+    .interview{
+        padding: 55px 0 135px;
+    }
+    .interview .inner{
+        padding: 0;
+    }
+    .interview__copy{
+        font-size: 2.1rem;
+        margin-bottom: 55px;
+    }
+    .interview__atc.atc01{
+        margin-bottom: 100px;
+    }
+    .interview__txt{
+        padding: 0 5%;
+        font-size: 1.5rem;
+    }
+    .interview__name{
+        padding: 0 5%;
+        font-size: 1.6rem;
+    }
+}
+
+
+
+/*============================
+	logomark
+============================*/
+.logomark{
+    padding-bottom: 150px;
+}
+.logo__img{
+    margin-bottom: 60px;
+}
+.logo__img02{
+    max-width: 460px;
+    margin: 0 auto 50px;
+}
+.logo__txt{
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 110px;
+}
+.logomark .link__btn a{
+    margin: 0 auto;
+}
+@media screen and (max-width:768px) {
+   
+}
+
+@media screen and (max-width:599px) {
+    .logomark{
+        padding-bottom: 130px;
+    }
+    .logo__img img{
+       object-fit: cover;
+       height: 325px;
+       width: 100%;
+    }
+    .logo__img02{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .logo__txt{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .logomark .link__btn a{
+        display: none;
+    }
+}

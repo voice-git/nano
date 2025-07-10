@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+/*============================
+	curriculum 共通パーツ
+============================*/
+
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:599px) {}
+
+/*============================
+	contents
+============================*/
+.contents {
+    padding: 65px 0 135px;
+}
+
+.contents__lead {
+    margin-bottom: 60px;
+    line-height: 2;
+}
+
+.contents__atc {
+    width: 48%;
+    border: solid 1px #fff;
+    padding: 40px 3% 20px;
+}
+
+.contents__h3 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: .05em;
+}
+
+.contents__txt {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:599px) {
+    .contents {
+        padding: 50px 0 100px;
+    }
+
+    .contents__lead {
+        margin-bottom: 50px;
+    }
+
+    .contents__atc {
+        width: 100%;
+    }
+
+    .contents__atc.atc01 {
+        margin-bottom: 25px;
+        padding: 30px 5%;
+    }
+
+    .contents__h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .contents__txt {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/*============================
+	schedule
+============================*/
+.schedule {
+    padding: 0 0 165px;
+}
+
+.schedule__img {
+    margin-bottom: 80px;
+}
+
+.schedule__h3 {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    letter-spacing: .05em;
+    text-align: center;
+}
+
+.schedule__atc {
+    margin-bottom: 50px;
+}
+
+.schedule__atc:last-child {
+    margin: 0;
+}
+
+.schedule__atc--img {
+    width: 200px;
+    height: auto;
+}
+
+.schedule__right {
+    width: 80%;
+    padding: 10px 0 0 3%;
+}
+
+.schedule__right .flex {
+    margin-bottom: 30px;
+    align-items: flex-end;
+}
+
+.schedule__h4 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.schedule__h4 span {
+    font-size: 2.8rem;
+    display: block;
+    margin-top: 10px;
+}
+
+.schedule__h5 {
+    font-size: 1.5rem;
+}
+
+.schedule__h5 span {
+    display: block;
+    margin-top: 10px;
+}
+
+.schedule__txt {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:768px) {
+    .schedule__h4 span {
+        font-size: 2rem;
+    }
+
+    .schedule__h5 span {
+        font-size: 1.4rem;
+    }
+
+    .schedule__txt {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .schedule{
+        padding: 0 0 100px;
+    }
+    .schedule .inner {
+        padding: 0;
+    }
+
+    .schedule__img {
+        margin-bottom: 75px;
+    }
+
+    .schedule__h3 {
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+
+    .schedule__atc {
+        padding: 70px 5% 0;
+        position: relative;
+        margin-bottom: 75px;
+    }
+
+    .schedule__right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .schedule__atc--img {
+        margin: 0 auto 20px;
+    }
+
+    .schedule__h4 {
+        position: absolute;
+        width: 90%;
+        top: 0;
+        left: 5%;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+     .schedule__h4 span{
+         font-size: 1.8rem;
+     }
+     .schedule__h5{
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+     }
+     .schedule__txt{
+         line-height: 2;
+     }
+}
+
+/*============================
+	classes
+============================*/
+.classes {
+    padding: 0 0 160px;
+}
+
+.classes__dl {
+    border-bottom: solid 1px #fff;
+}
+
+.classes__dt {
+    height: 100px;
+    padding: 32px 3% 0;
+    line-height: 1.4;
+    border-top: solid 1px #fff;
+    font-size: 2.2rem;
+    /* background: url(../img/cmn/btn_down_wh.png)no-repeat center right 5%; */
+    cursor: pointer;
+    position: relative;
+}
+
+.classes__dt::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 15px;
+    background: url(../img/cmn/btn_down_wh.png)no-repeat center center/contain;
+    right: 5%;
+    top: 50px;
+    transition: .5s;
+}
+
+.close.classes__dt::after {
+    transform: rotate(180deg);
+}
+
+.classes__dd {
+    display: none;
+    line-height: 2;
+    padding: 40px 2% 60px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.dd__top{
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 20px;
+}
+.dd__ttl {
+	max-width: 90%;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.class__ctg {
+    line-height: 22px;
+    width: 70px;
+    font-size: 1.3rem;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.class__ctg.ctg01 {
+    background: #00A1B8;
+}
+
+.class__ctg.ctg02 {
+    background: #90D0DB;
+}
+
+.class__ctg.ctg03 {
+    background: #fff;
+    color: #00A1B8;
+}
+
+.dd__txt {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .classes__dt {
+        font-size: 2rem;
+        background-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:599px) {
+    .classes__dt{
+        text-align: center;
+        height: 80px;
+        padding: 28px 0 0;
+    }
+    .classes__dt::after{
+        width: 20px;
+        top: 35px;
+    }
+
+    .classes__dt span{
+        font-size: 1.5rem;
+    }
+    .classes__dd{
+        padding: 40px 0 70px;
+    }
+    .dd__top{
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    .dd__ttl{
+	    max-width: 100%;
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        display: block;
+    }
+    .class__ctg{
+        margin: 0 0 25px;
+        display: block;
+    }
+    .dd__txt{
+        margin-bottom: 75px;
+    }
+}

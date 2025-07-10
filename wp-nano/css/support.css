@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+/*============================
+	support 共通パーツ
+============================*/
+
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:599px) {}
+
+/*============================
+	support
+============================*/
+.support {
+    padding: 120px 0 0;
+
+}
+
+.support .inner {
+    border-bottom: solid 1px #fff;
+}
+
+.sp__contents {
+    margin-bottom: 80px;
+}
+
+.support__h3 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.support__txt {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sp__contents table {
+    table-layout: auto;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.sp__contents table th {
+    padding: 15px 20px;
+    width: 100px;
+    border: solid 1px #fff;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
+.sp__contents table td {
+    padding: 15px 20px;
+    width: 100px;
+    white-space: nowrap;
+    border: solid 1px #fff;
+    text-align: center;
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
+.support__txt02 {
+    font-size: 1.4rem;
+    color: #A0A0A0;
+}
+.support__txt02 a {
+    text-decoration: underline;
+    color: #A0A0A0;
+}
+
+@media screen and (max-width:768px) {
+    .tbl__swipe {
+        display: none;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .support {
+        padding: 60px 0 0;
+    }
+    .support .inner{
+        padding: 0;
+        margin: 0 5%;
+    }
+    .support__h3 {
+        font-size: 1.8rem;
+    }
+
+    .sp__contents table {
+        width: 100%;
+    }
+
+/*
+    .sp__contents table.tbl02 {
+       
+        width: 100%;
+    }
+*/
+    .tbl__scroll{
+        overflow-x: auto;
+    }
+    .sp__contents table::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .sp__contents table::-webkit-scrollbar-track {
+        background: #F1F1F1;
+    }
+
+    .sp__contents table::-webkit-scrollbar-thumb {
+        background: #BCBCBC;
+    }
+
+    .sp__contents table th {
+        font-size: 1.7rem;
+    }
+
+    .sp__contents table td {
+        font-size: 1.7rem;
+    }
+
+    .tbl__swipe {
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .tbl__swipe img {
+        width: 25px;
+        height: auto;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .support__txt02{
+        font-size: 1.3rem;
+    }
+
+}
+
+/*============================
+	recruitment
+============================*/
+.recruitment {
+    padding: 120px 0 70px;
+    margin-bottom: 70px;
+}
+
+.recruitment a {
+    color: #fff;
+
+}
+
+.recruitment .inner {
+    border-bottom: solid 1px #fff;
+    padding-bottom: 60px;
+}
+
+.recruitment .page__sec--ttl {
+    padding-bottom: 60px;
+    border-bottom: solid 1px #fff;
+}
+
+.recruit__txt {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.recruit__txt a {
+    text-decoration: underline;
+}
+
+.recruit__btn a {
+    display: block;
+    width: 720px;
+    line-height: 50px;
+    color: #fff;
+    background: #00A1B8;
+    border: solid 1px #00A1B8;
+    text-align: center;
+    transition: .5s;
+    margin: 0 auto 15px;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.recruit__btn a:hover {
+    background: #fff;
+    color: #00A1B8;
+    opacity: .8;
+}
+
+.recruit__btn.btn02 a {
+    margin-bottom: 30px;
+}
+
+.recruit__linkwrap{
+    margin-bottom: 100px;
+}
+.recruit__link {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .recruit__btn a{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .recruitment{
+        padding: 75px 0 0;
+    }
+    .recruitment .inner{
+      padding: 0 0 60px;
+      margin: 0 5%;  
+    }
+    .recruit__txt{
+        line-height: 2;
+        margin-bottom: 50px;
+    }
+	.recruit__linkwrap{
+        margin-bottom: 70px;
+	}
+}

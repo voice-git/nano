@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+// 共通
+.page__ttl {
+    top: 58%;
+}
+
+.section__ttl {
+    padding-left: 70px;
+
+    &.eng-none {
+        background: transparent;
+        padding-left: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-left: 0;
+    }
+}
+
+footer {
+    padding-bottom: 50px;
+
+    .inner {
+        display: flex;
+        align-items: flex-start;
+
+        @media screen and (max-width:767px) {
+            display: block;
+        }
+
+        .left {
+            .ft__logo {
+                width: 360px;
+                margin-left: 0;
+                margin-bottom: 30px;
+
+                @media screen and (max-width:767px) {
+                    width: 90%;
+                }
+            }
+
+            .ft__copyright {
+                font-size: 1.2rem;
+                text-align: left;
+            }
+        }
+
+        .right {
+            margin-left: auto;
+
+            .ft-nav__li {
+                font-size: 1.5rem;
+            }
+
+            .righttext {
+                font-size: 1.2rem;
+                text-align: right;
+
+                @media screen and (max-width:767px) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .ft__copyright {
+            margin-top: 40px;
+        }
+    }
+}
+
+// トップ
+#topics .inner__large {
+    height: 50px;
+
+    @media screen and (max-width:767px) {
+        height: auto;
+    }
+}
+
+#greeting .inner__large .greeting__txt {
+    line-height: 2;
+    /*
+	@media screen and (max-width:767px){
+		text-align: justify;
+		br{display: none}
+	}
+*/
+}
+
+#program {
+    .program__left {
+        width: 60%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    .program__right {
+        width: 40%;
+
+        .program__img {
+            max-width: 420px;
+        }
+    }
+}
+
+#message {
+    // 	height: 1050px;
+    margin-top: -720px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: -180px;
+    }
+}
+
+#link__area {
+    padding-bottom: 120px;
+}
+
+// カリキュラム
+#schedule {
+    .schedule__right .flex {
+        display: block;
+
+        .schedule__h5 {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin-top: 25px;
+        }
+    }
+
+    @media screen and (max-width: 599px) {
+        .schedule__atc {
+            padding-top: 90px;
+
+            .schedule__h4 {
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+// サポート
+#support {
+    .support__tbl td {
+        white-space: normal;
+
+        &.alignleft {
+            text-align: left;
+        }
+    }
+
+    .inner {
+        border-bottom: none;
+    }
+}
+
+#recruitment {
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    .inner {
+        border-bottom: none;
+    }
+
+    .page__sec--ttl {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+}
+
+// 教員紹介
+.faculty__h3 .name {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    height: 2em;
+}
+
+.faculty__h3 .name-en {
+    line-height: 1.5;
+    height: 2em;
+}
+
+.faculty__h3 .name-en.long {
+    height: 4em;
+}
+
+.faculty__h3 .position {
+    height: 4em;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    color: #A0A0A0;
+    @media screen and (max-width:599px){
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+}
+
+
+// トップPDFボタン
+.btn-top-pdf a {
+    width: 442px;
+    height: 50px;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+    .btn-top-pdf {
+        display: block !important;
+    }
+
+    .btn-top-pdf a {
+        width: 200px;
+        margin: 64px auto 0;
+        line-height: 50px;
+    }
+}
